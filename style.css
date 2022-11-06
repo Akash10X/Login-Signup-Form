@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background-color:white;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+    transition: 0.3s linear;
+}
+
+
+.container{
+    min-width: 350px;
+    padding: 30px;
+    background-color: cadetblue;
+}
+
+.login-title, .register-title{
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+}
+
+input{
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    color: rgba(0, 0, 0, 0.555);
+    font-size: 0.9em;
+    margin-bottom: 0.7em;
+    outline: none;
+    padding: 13px;
+    width: 100%;
+    color: black;
+}
+
+input[type="submit"]{
+    background-color:#EA4C88;
+    border-radius: 4px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    padding: 0.9rem;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+
+input[type="submit"]:hover{
+    background-color: #d1477c;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.459);
+}
+
+p{
+    color: black;
+    font-size: 0.85em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+a{
+    color: #9f4f46;
+    text-decoration: none;
+}
+
+
+.toggle {
+    width: 50px;
+    margin: 0 auto;
+    aspect-ratio:2;
+    background-image: linear-gradient(to right,  hsl(210, 78%, 56%) ,  hsl(146, 68%, 55%));
+    border-radius: 15px;
+    padding: 3px;
+    cursor: pointer;
+   
+}
+
+.toggle__circle{
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: hsl(230, 17%, 14%);
+    border-radius: 15px;
+    transition: transform 200ms ease;
+}
+
+.toggle__circle-right{
+    transform: translate(calc(50px - 6px - 100%));
+    transition: transform 200ms ease;
+}
+
+
+
+.logined-user{
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.logout{
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 auto;
+    color: orange;
+    background-color: lightcyan;
+}
+
+/* dark mode */
+
+body.mode{
+    background-color: #201b2c;
+}
+
+.mode .container{
+    background-color: #165482;
+}
+
+.mode input{
+    background-color: #7bc1c7;
+}
+
+.mode input[type="submit"]{
+    background-color: #4213135e;
+}
+
+.mode input[type="submit"]:hover{
+    background-color: #ba92925e;
+}
+
+
+.mode .login-title, .mode .register-title{
+    color: whitesmoke;
+}
+
+.mode p{
+    color: white;
+}
+
+.mode a{
+    color: rgb(248, 148, 148);
+}
+
+.mode .error-msg{
+    color: rgb(254, 200, 200);
+}
+
+.mode .register-success{
+    color: rgb(248, 148, 148);
+}
+
+
+.error-msg{
+display: none;
+margin: 1% 6%;
+color: #b01412;
+font-weight: bold;
+}
+
+.not-valid .error-msg{
+    display: block;
+}
+
+.register-success{
+    margin: 4%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #cff3db;
+}

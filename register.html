@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div id="toggle" class="toggle">
+            <div id="toggle-circle" class="toggle__circle"></div>
+          </div>
+        <h1 class="register-title">Register</h1>
+        <p class="register-success"></p>
+        <form class="form-container">
+            <div class="input-field">
+                <input class="username" type="text" name="username" placeholder="Username">
+                <span class="error-msg"></span>
+            </div>
+            <div class="input-field">
+                <input class="email" type="email" name="email" placeholder="Email">
+                <span class="error-msg"></span>
+            </div>
+            <div class="input-field">
+                <input class="password" type="password" name="password" placeholder="Password"> 
+                <span class="error-msg"></span>
+            </div>
+            <div class="input-field">
+                <input class="confirm-password" type="password" name="password" placeholder="Confirm Password"> 
+                <span class="error-msg"></span>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+        <p>Already have an account <a href="./login.html">Go to login</a></p>
+    </main>
+</body>
+</html>
